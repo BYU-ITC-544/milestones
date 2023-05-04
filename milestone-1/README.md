@@ -59,4 +59,5 @@ At the end of the semester, you will give another presentation with any updates 
 
 ### Submission Requirements
 
-You will be graded on the quality and professionalism of your written and verbal presentation. Upload your presentation to Learning Suite before you present it in class.
+[ ] 100 Points - Submit your documentation and presentation to Learning Suite before class  
+[ ] 200 Points - Presentation

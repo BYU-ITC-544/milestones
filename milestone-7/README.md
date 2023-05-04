@@ -14,5 +14,5 @@
 
 ### Submission Requirements
 
-- [ ] 100 Points - Submit your updated documentation and final presentation to Learning Suite
-- [ ] 200 Points - Give your final presentation
+[ ] 100 Points - Submit your updated documentation and final presentation to Learning Suite  
+[ ] 200 Points - Give your final presentation

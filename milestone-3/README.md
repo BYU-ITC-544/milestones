@@ -75,17 +75,17 @@ Update the documentation and diagrams your team made in milestone 1 to reflect a
 <br>
 <br>
 
-### Pass-Off Requirements
+### Submission Requirements
 
 Create 1 report for your team and submit the link to Learning Suite as a PDF, any other format will not be accepted.
 
-- [ ] 70 Points - Screenshot of each running VM with the following information shown:
-    - Hostname
-    - IP address
-    - Internet access
+[ ] 70 Points - Screenshot of each running VM with the following information shown:
+- Hostname
+- IP address
+- Internet access  
 
-- [ ] 15 Points - Table showing the name and description of each host (use the above descriptions)
-- [ ] 10 Points - Screenshot(s) showing your network configurations on the hypervisor
-- [ ] 10 Points - Screenshot showing the VLANs set up
-- [ ] 10 Points - List of all implemented firewall rules and why it is a rule
-- [ ] 5 Points - The port forwarding for the webserver is working correctly
+[ ] 15 Points - Table showing the name and description of each host (use the above descriptions)  
+[ ] 10 Points - Screenshot(s) showing your network configurations on the hypervisor  
+[ ] 10 Points - Screenshot showing the VLANs set up  
+[ ] 10 Points - List of all implemented firewall rules and why it is a rule  
+[ ] 5 Points - The port forwarding for the webserver is working correctly  
