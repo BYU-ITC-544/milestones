@@ -1,0 +1,7 @@
+{
+    "site_name": "Test Blog",
+    "welcome_text": "Hello, this is BetterBlog, totally secure and not buggy blogging platform. <br>Now with Redis!",
+    "database_host": "127.0.0.1",
+    "backup_user": "admin",
+    "backup_password": "admin"
+}

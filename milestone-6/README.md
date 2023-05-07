@@ -1,4 +1,4 @@
-# Milestone 6: IDS/IPS 
+# Milestone 6: Backup and restore
 
 ## Objective:
 
