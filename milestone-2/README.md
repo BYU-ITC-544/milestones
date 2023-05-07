@@ -14,6 +14,7 @@
 
 6. Continuous improvement: Risk assessment and risk management are ongoing processes that help organizations to continuously improve their security posture by identifying new risks and addressing them proactively.
 
+<div style="page-break-after: always"></div>
 
 ## Instructions:
 
@@ -39,7 +40,6 @@ Your plan should at a minimum contain the following:
 
 In addition to a written document, you should create a spreadsheet to document any risks you have identified and any information pertaining to that risk.
 
-
 ### Submission Requirements
 
-[] 100 Points - Submit your comprehensive risk management documents to Learning Suite. Submit documents in the appropriate file format and file security measures
+[ ] 100 Points - Submit your comprehensive risk management documents to Learning Suite. Submit documents in the appropriate file format and file security measures

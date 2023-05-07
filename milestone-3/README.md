@@ -12,6 +12,8 @@ You should ensure you configure with sufficient disk space (100GB for Windows se
 
 Save a snapshot of each VM. If you don't do this, you will have to repeat this lab later down the line in your own time, with no extra grade!
 
+<div style="page-break-after: always"></div>
+
 ### Step 1: Installation
 
 You will be given 2 physical servers that your team will use for the entire semester. 1 server will host your type 1 hypervisor and the other will act as a NAS for all your VM storage.
@@ -31,8 +33,6 @@ You will be given 2 physical servers that your team will use for the entire seme
 1. Create an appropriate folder structure within TrueNAS and give the needed folder(s) the correct permissions to be accessible from the hypervisor
 1. Add the TrueNAS folder to your hypervisor as storage
 
-<br>
-<br>
 
 ### Step 3: Networking
 
@@ -67,13 +67,7 @@ These machines will be used for your labs throughout this semester.
 
 Update the documentation and diagrams your team made in milestone 1 to reflect any changes that you have made
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div style="page-break-after: always"></div>
 
 ### Submission Requirements
 
