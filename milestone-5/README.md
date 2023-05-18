@@ -10,8 +10,6 @@ Configure the:
 
 ## Instructions:
 
-You will be given the necessary files for each server. Your task will be to configure and secure them.
-
 ### Step 1: Web Server
 
 1. Evaluate and secure the code for the given website
@@ -44,31 +42,26 @@ You will be given the necessary files for each server. Your task will be to conf
 1. Connect to the mail server using an email client on a Linux GUI VM
 
 
+<div style="page-break-after: always"></div>
 
 ### Requirements
 
-[ ] 10 Points - Webserver is installed and accessible from the BYU network
-[ ] 20 Points - Users can use the website without any errors
-[ ] 20 Points - Webserver has a secure config
-[ ] 40 Points - Website code has been secured
-
-
-[ ] 10 Points – A database server has been installed 
-[ ] 20 Points – The database has a secure config
-[ ] 10 Points - The database has the correct tables for the website
-
-[ ] 10 Points - The file server has been installed 
-[ ] 20 Points - The file server has a secure config
-[ ] 20 Points – The file server can be accessed from workstation VMs
-[ ] 20 Points - Users can perform CRUD operations on the folders and files within their permission group
-
-
-[ ] 10 Points - The mail server has been installed 
-[ ] 20 Points – The mail server has a secure config
-[ ] 20 Points – The mail server can be accessed from workstation VMs
-[ ] 20 Points - Users can send and receive emails 
-
-[ ] 50 Points - Document all your config files and explain and security principles and practices that you have used
+[ ] 10 Points - Webserver is installed and accessible from the BYU network  
+[ ] 20 Points - Users can use the website without any errors  
+[ ] 20 Points - Webserver has a secure config  
+[ ] 40 Points - Website code has been secured  
+[ ] 10 Points – A database server has been installed   
+[ ] 20 Points – The database has a secure config  
+[ ] 10 Points - The database has the correct tables for the website  
+[ ] 10 Points - The file server has been installed   
+[ ] 20 Points - The file server has a secure config  
+[ ] 20 Points – The file server can be accessed from workstation VMs  
+[ ] 20 Points - Users can perform CRUD operations on the folders and files within their permission group  
+[ ] 10 Points - The mail server has been installed   
+[ ] 20 Points – The mail server has a secure config  
+[ ] 20 Points – The mail server can be accessed from workstation VMs  
+[ ] 20 Points - Users can send and receive emails   
+[ ] 50 Points - Document all the config files and explain and security principles and practices used
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
 
