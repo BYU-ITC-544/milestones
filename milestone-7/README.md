@@ -1,4 +1,4 @@
-# Milestone 7: Final Presentation & Documentation
+# Milestone 7 -  Final Presentation & Documentation
 
 ## Instructions:
 

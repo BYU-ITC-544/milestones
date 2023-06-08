@@ -82,4 +82,6 @@ Create 1 report for your team and submit the link to Learning Suite as a PDF, an
 [ ] 10 Points - Screenshot(s) showing your network configurations on the hypervisor  
 [ ] 10 Points - Screenshot showing the VLANs set up  
 [ ] 10 Points - List of all implemented firewall rules and why it is a rule  
-[ ] 5 Points - The port forwarding for the webserver is working correctly  
+[ ] 5 Points - The port forwarding for the webserver is working correctly 
+
+120 Points Total

@@ -25,14 +25,12 @@ Configure the:
 1. Set up any other security measure you deem necessary
 1. Set up the database on the server 
 
-
 ### Step 3: File server
 
 1. Set up your central file server on one of the Linux VMs 
 1. Set access rights to the different directories and files
 1. Connect all the workstation computers to the central file server
 1. Test CRUD operations from the workstation computers on the file server
-
 
 ### Step 4: Mail server
 
@@ -41,8 +39,12 @@ Configure the:
 1. Connect to the mail server using an email client on a Windows GUI VM
 1. Connect to the mail server using an email client on a Linux GUI VM
 
-
 <div style="page-break-after: always"></div>
+
+### Step 5: Vulnerability Scanning
+
+1. Install OpenVas on a Kali VM
+1. Scan all your VMs, document the results and any vulnerabilities you may need to fix
 
 ### Requirements
 
@@ -61,8 +63,10 @@ Configure the:
 [ ] 20 Points – The mail server has a secure config  
 [ ] 20 Points – The mail server can be accessed from workstation VMs  
 [ ] 20 Points - Users can send and receive emails   
+[ ] 20 Points - OpenVAS has been installed
+[ ] 30 Points - Vulnerability Scanning of all VMs has been completed
 [ ] 50 Points - Document all the config files and explain and security principles and practices used
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
 
-Total 320 Points
+Total 370 Points
