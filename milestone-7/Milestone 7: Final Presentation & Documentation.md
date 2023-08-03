@@ -1,4 +1,4 @@
-# Milestone 7 -  Final Presentation & Documentation
+# Milestone 7: Final Presentation & Documentation
 
 ## Instructions:
 
@@ -14,5 +14,5 @@
 
 ### Submission Requirements
 
-[ ] 100 Points - Submit your updated documentation and final presentation to Learning Suite  
-[ ] 200 Points - Give your final presentation
+[ ] 30 Points - Submit your updated documentation and final presentation to Learning Suite  
+[ ] 70 Points - Give your final presentation

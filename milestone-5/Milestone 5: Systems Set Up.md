@@ -1,4 +1,4 @@
-# Milestone 5: Systems Set up
+# Milestone 5: Systems Set Up
 
 ## Objective:
 
@@ -43,30 +43,32 @@ Configure the:
 
 ### Step 5: Vulnerability Scanning
 
-1. Install OpenVas on a Kali VM
+1. Install OpenVas or another vulnerability scanning tool on a Kali VM
 1. Scan all your VMs, document the results and any vulnerabilities you may need to fix
 
 ### Requirements
 
-[ ] 10 Points - Webserver is installed and accessible from the BYU network  
-[ ] 20 Points - Users can use the website without any errors  
-[ ] 20 Points - Webserver has a secure config  
-[ ] 40 Points - Website code has been secured  
-[ ] 10 Points – A database server has been installed   
-[ ] 20 Points – The database has a secure config  
-[ ] 10 Points - The database has the correct tables for the website  
-[ ] 10 Points - The file server has been installed   
-[ ] 20 Points - The file server has a secure config  
-[ ] 20 Points – The file server can be accessed from workstation VMs  
-[ ] 20 Points - Users can perform CRUD operations on the folders and files within their permission group  
-[ ] 10 Points - The mail server has been installed   
-[ ] 20 Points – The mail server has a secure config  
-[ ] 20 Points – The mail server can be accessed from workstation VMs  
-[ ] 20 Points - Users can send and receive emails   
-[ ] 20 Points - OpenVAS has been installed
-[ ] 30 Points - Vulnerability Scanning of all VMs has been completed
-[ ] 50 Points - Document all the config files and explain and security principles and practices used
+[ ] 15 Points - Webserver  
+    - The webserver has been set up and is accessible from the CSRL network  
+    - Users can use the website without any errors  
+    - The Webserver has a secure config  
+    - The Website code has been secured  
+[ ] 15 Points – Database  
+    - Database has been setup   
+    - The database has a secure config  
+    - The database has the correct tables for the website  
+[ ] 15 Points - File Server  
+    - The file server has been setup   
+    - The file server has a secure config  
+    - The file server can be accessed from the workstations  
+    - Users can perform CRUD operations on the folders and files within their permission group  
+[ ] 15 Points - Mail server  
+    - The mail server has been setup  
+    - The mail server has a secure config    
+    - The mail server can be accessed from the workstations  
+    - Users can send and receive emails  
+[ ] 5 Points - A vulnerability scanning tool has been installed  
+[ ] 5 Points - Vulnerability Scanning of all VMs and workstations has been completed  
+[ ] 30 Points - Document all the config files and explain and security principles and practices used  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
-
-Total 370 Points

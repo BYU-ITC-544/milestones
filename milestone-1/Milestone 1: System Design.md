@@ -6,7 +6,7 @@ Given a list of requirements, your team will design a network and choose the sof
 
 ## Requirements
 
-You are the new IT department for Spicy Cluck Co. which is a company that has a chain of fried chicken stores across the United States and Europe. Your team has been tasked with setting up a new regional office in Provo, Utah. The office needs to have the following service and systems:
+You are the new IT department for Spicy Cluck Co. which is a company that has a chain of fried chicken stores across the United States and Europe. Your team has been tasked with setting up a new regional office in Provo, Utah. The office needs to have the following services and systems:
 
 - An Email server for internal communication
 - A DNS Linux server to resolve internal and external requests
@@ -14,10 +14,12 @@ You are the new IT department for Spicy Cluck Co. which is a company that has a 
 - A database server for use by the website
 - A file server for central file storage
 - Active Directory to manage users
-- A backup active directory
+- A backup Active Directory
 - A Desktop Linux machine to access any critical systems and services
 - General workstations for employees to use
 - At least 1 Linux machine for general use
+- Printer server
+- Printer
 
 As a minimum, you should use:
 
@@ -38,7 +40,7 @@ This will just be an initial design and you will be expected to make changes to 
 
 1. Create a network diagram that meets the above requirements
 1. Justify your design decisions and state any assumptions that you have made
-1. Include what IP address, VLANs, etc. you will use
+1. Include what IP addresses, VLANs, etc. you will use
 
 ### Step 2: Firewall rules
 
@@ -49,8 +51,10 @@ This will just be an initial design and you will be expected to make changes to 
 
 1. Active Directory, LDAP, DNS, DHCP, Group Policies
 1. Back up and Restore solutions
+1. Disaster Recovery
 1. IDS, IPS & General security
 1. Policies, frameworks, and laws that need to be followed
+1. Devices that should be a physical workstation vs a VM
 
 This is a list of the users that will be using the system.
 
@@ -83,6 +87,5 @@ At the end of the semester, you will give another presentation with any updates 
 
 ### Submission Requirements
 
-[ ] 100 Points - Submit your documentation and presentation to Learning Suite before class  
-[ ] 200 Points - Presentation
-
+[ ] 50 Points - Submit your documentation and presentation to Learning Suite before class  
+[ ] 50 Points - Presentation

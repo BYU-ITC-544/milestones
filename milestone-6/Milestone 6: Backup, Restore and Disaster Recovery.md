@@ -1,4 +1,4 @@
-# Milestone 6 - Backup and restore
+# Milestone 6: Backup, Restore, and Disaster Recovery
 
 ## Objective:
 
@@ -13,7 +13,9 @@ The purpose of backup and restore systems in an enterprise environment is to pro
 7. Peace of mind and risk mitigation
 8. System upgrades and migrations
 
-During this lab, you will learn the importance of not only having a well-written backup policy but also implementing it. 
+Disaster recovery is of paramount importance for organizations of all sizes and types. It refers to the process and set of strategies and procedures put in place to recover and restore critical business operations after a significant disruptive event, such as a natural disaster, cyberattack, equipment failure, power outage, or any other event that can cause significant data loss or downtime. The importance of disaster recovery can be summarized as follows:
+
+Disaster recovery is not just a reactive measure; it is a proactive strategy that enables organizations to prepare for unforeseen events, protect their assets, and ensure business continuity in the face of adversity. It is a crucial component of a comprehensive risk management and business continuity plan.
 
 ## Instructions:
 
@@ -58,7 +60,32 @@ There are several open-source and free enterprise backup solutions available tha
 
 These solutions vary in terms of features, scalability, and complexity, so it's important to evaluate them based on your specific requirements. Additionally, make sure to review the licensing terms and any potential limitations or restrictions that may apply.
 
+## Step 3 - Disaster Recovery Plan
+
+A comprehensive Disaster Recovery (DR) plan should address various aspects of an organization's operations to ensure business continuity in the event of a disaster. Here is a list of key elements that should be included in a well-rounded DR plan:
+
+1. Risk Assessment and Business Impact Analysis
+2. Recovery Objectives and Priorities
+3. Roles and Responsibilities
+4. Contact Information
+5. Data Backup and Restoration Procedures
+6. Disaster Recovery Site
+7. Hardware and Software Inventory
+8. Network Infrastructure
+9. Application Recovery Procedures
+10. Testing and Maintenance
+11. Training and Awareness
+12. Vendor and Supplier Contingency Plans
+13. Financial and Legal Considerations
+14. Emergency Response Procedures
+15. Incident Reporting and Escalation
+16. Communication Plan
+17. Post-Recovery Evaluation
+
+Remember that each organization's DR plan will vary based on its specific needs, industry, size, and the criticality of its operations. Regular updates and reviews of the plan are essential to ensure its relevance and effectiveness in addressing potential threats and disasters.
+
 ### Submission Requirements
 
-[ ] 50 Points - A backup policy that contains all 14 points  
-[ ] 150 Points - You can backup and restore your machines to the specifications in your policy
+[ ] 30 Points - A backup policy that contains all 14 points  
+[ ] 40 Points - You can backup and restore your machines to the specifications in your policy
+[ ] 30 Points - Disaster Recovery Plan

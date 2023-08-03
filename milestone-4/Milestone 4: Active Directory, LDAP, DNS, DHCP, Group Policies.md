@@ -29,10 +29,9 @@ Here are the objectives of each technology:
 
 Set up your Windows 2022 Server as a domain controller and use it for AD. You will also need to configure the 2nd Windows 2022 Server as the backup domain controller and AD. All machines should be added to the domain. You should be able to log in to all the VMs using the admin credentials. 
 
-
 ### Step 2: DNS
 
-Use the VM you designated as a DNS server to set up an internal DNS server. You should also configure your router to point DNS requests towards this server. You can use any DNS solution to create a DNS server on any of the Linux VMs. The DNS server should be able to resolve internal domain names for all the services correctly. For example, if you wanted to access the email server navigating to `mail.sysadmin.local` should allow the user to access and then log in to the mail server.
+Use the VM you designated as a DNS server to set up an internal DNS server. You should also configure your router to point DNS requests toward this server. You can use any DNS solution to create a DNS server on any of the Linux VMs. The DNS server should be able to resolve internal domain names for all the services correctly. For example, if you wanted to access the email server navigating to `mail.sysadmin.local` should allow the user to access and then log in to the mail server.
 
 ### Step 3: DHCP
 
@@ -52,20 +51,18 @@ Create documentation for each step that would be useful for other sys admins in 
 
 [ ] 10 Points - Primary Domain controller is working  
 [ ] 10 Points - Backup Domain controller is working  
-[ ] 50 Points - AD is set up and the admin user  can log in to all systems  
-[ ] 50 Points - DNS can resolve internally the:
+[ ] 5 Points - AD is set up and the admin user can log in to all systems  
+[ ] 10 Points - DNS can resolve internally the:
    - Email Server
    - DNS server
    - Web Server
    - Database Server
    - File Server
-   - Primary Windows Server
-   - Back up Windows Server  
+   - Primary AD Server
+   - Back up AD Server  
 
-[ ] 20 Points - All general machines receive an IP address from DHCP  
-[ ] 50 Points - The 20 employees have been assigned to appropriate groups and given permissions  
-[ ] 60 Points - Documentation  
+[ ] 5 Points - All general machines receive an IP address from DHCP  
+[ ] 10 Points - The 20 employees have been assigned to appropriate groups and given permissions  
+[ ] 50 Points - Documentation  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
-
-Total 250 Points

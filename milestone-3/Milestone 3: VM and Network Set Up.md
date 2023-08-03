@@ -6,9 +6,9 @@ At the end of this milestone, you should have your physical and virtual machines
 
 ## Instructions:
 
-You must not download pre-built virtual machines. You should install all machines from an ISO/USB/NetInstall image into the virtual environment.
+You must not download pre-built virtual machines. You should install all machines from an ISO image into the virtual environment.
 
-You should ensure you configure with sufficient disk space (100GB for Windows server 2022, 50GB min for other Windows, and 20GB for the Linux flavors). Expanding disks is fine (using LVM on Linux will make this much easier).  (If you run these on your hardware, you should ensure you can run 2-3 of these VMs at any one time, and you must also ensure you have a copy on an external drive or your machine.) We will not be responsible for lost machines - this is part of being a sysadmin!
+You should ensure you configure with sufficient disk space (100GB for Windows server 2022, 50GB min for other Windows, and 20GB for the Linux flavors). Expanding disks is fine (using LVM on Linux will make this much easier). We will not be responsible for lost machines - this is part of being a sysadmin!
 
 Save a snapshot of each VM. If you don't do this, you will have to repeat this lab later down the line in your own time, with no extra grade!
 
@@ -16,23 +16,18 @@ Save a snapshot of each VM. If you don't do this, you will have to repeat this l
 
 ### Step 1: Installation
 
-You will be given 2 physical servers that your team will use for the entire semester. 1 server will host your type 1 hypervisor and the other will act as a NAS for all your VM storage.
-
-1. Download the TrueNAS core ISO
-1. Prepare a USB drive to install the ISO
-1. Install the NAS
-    - Make sure to set a secure password that you will not forget
+You will be given a physical server that your team will use for the entire semester. The server will host your type 1 hypervisor.
 
 1. Download the ISO for your chosen hypervisor
 1. Prepare a USB drive to install the ISO
 1. Install the hypervisor
     - Make sure to set a secure password that you will not forget
+1. You will be using a NAS to store your team's VMs. Instructions on how to connect the NAS will be given during the lab period.
 
 ### Step 2: Configuring TrueNAS
 
 1. Create an appropriate folder structure within TrueNAS and give the needed folder(s) the correct permissions to be accessible from the hypervisor
 1. Add the TrueNAS folder to your hypervisor as storage
-
 
 ### Step 3: Networking
 
@@ -40,7 +35,7 @@ You will be given 2 physical servers that your team will use for the entire seme
 
 ### Step 4: Firewall & Router
 
-You can PfSense or Opnsense as the firewall and router for this class and must have specific firewall rules implemented to avoid disrupting the IT&C network. You can use another solution if your team wants to but don't expect TA help to get it set up.
+You can use PfSense or Opnsense as the firewall and router for this class and must have specific firewall rules implemented to avoid disrupting the IT&C network. You can use another solution if your team wants to but don't expect TA help to get it set up.
 
 1. Install your firewall as your first VM and make sure that your connection to the internet is working correctly
 1. Set up all of your VLANs and firewall rules, you may want to install one machine in each VLAN to test if they are working as expected
@@ -73,15 +68,13 @@ Update the documentation and diagrams your team made in milestone 1 to reflect a
 
 Create 1 report for your team and submit the link to Learning Suite as a PDF, any other format will not be accepted.
 
-[ ] 70 Points - Screenshot of each running VM with the following information shown:
+[ ] 50 Points - Screenshot of each running VM with the following information shown:
 - Hostname
 - IP address
 - Internet access  
 
-[ ] 15 Points - Table showing the name and description of each host (use the above descriptions)  
+[ ] 10 Points - Table showing the name and description of each host (use the above descriptions)  
 [ ] 10 Points - Screenshot(s) showing your network configurations on the hypervisor  
-[ ] 10 Points - Screenshot showing the VLANs set up  
+[ ] 15 Points - Screenshot(s) showing the VLANs set up  
 [ ] 10 Points - List of all implemented firewall rules and why it is a rule  
 [ ] 5 Points - The port forwarding for the webserver is working correctly 
-
-120 Points Total

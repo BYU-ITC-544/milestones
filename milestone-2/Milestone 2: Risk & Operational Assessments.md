@@ -1,7 +1,8 @@
-# Milestone 2: Risk Assessment
+# Milestone 2: Risk & Operational Assessments
 
 ## Objective:
 
+### Risk Assessments
 1. Identify potential risks: Risk assessment helps to identify potential risks that could impact the organization's assets, such as data, systems, employees, and reputation.
 
 2. Prioritize risks: Risk assessment helps to prioritize risks based on their likelihood and impact so that the organization can allocate resources more effectively to mitigate the highest-priority risks.
@@ -14,9 +15,17 @@
 
 6. Continuous improvement: Risk assessment and risk management are ongoing processes that help organizations to continuously improve their security posture by identifying new risks and addressing them proactively.
 
+### Operational Assessments
+
+1. Process Analysis: Evaluate the organization's core processes to identify bottlenecks, inefficiencies, and opportunities for improvement.
+
+1. Performance Metrics: Measure and analyze key performance indicators (KPIs) to assess how well the organization is meeting its goals.
+
 <div style="page-break-after: always"></div>
 
 ## Instructions:
+
+### Step 1: Risk Assessment
 
 As a team, you will create a comprehensive risk management plan for the network you designed in the previous step. The document should be professional in its formatting and be easy to understand and navigate.
 
@@ -30,7 +39,7 @@ Your plan should at a minimum contain the following:
 
 1. Determine likelihood and impact: Determine the likelihood and impact of each potential risk based on the identified threats and vulnerabilities. This can be done using a risk matrix or other risk assessment tools.
 
-1. Prioritize risks: Prioritize the risks based on their likelihood and impact, and assign a risk level to each risk.
+1. Prioritize risks: Prioritize the risks based on their likelihood and impact and assign a risk level to each risk.
 
 1. Develop mitigation strategies: Develop mitigation strategies to reduce the risk level of each identified risk. Mitigation strategies can include implementing security controls such as firewalls, intrusion detection and prevention systems, access controls, and encryption.
 
@@ -40,6 +49,12 @@ Your plan should at a minimum contain the following:
 
 In addition to a written document, you should create a spreadsheet to document any risks you have identified and any information pertaining to that risk.
 
-### Submission Requirements
+## Step 2: Operational Assessments
 
-[ ] 100 Points - Submit your comprehensive risk management documents to Learning Suite. Submit documents in the appropriate file format and file security measures
+1. Complete one of the operational assessments from Chapter 56: Operational Assessments 
+
+## Submission Requirements
+
+[ ] 60 Points - Submit your comprehensive risk management documents to Learning Suite. Submit documents in the appropriate file format and file security measures.
+
+[ ] 40 Points - Submit your completed Operational Assessment. Submit documents in the appropriate file format and file security measures.
