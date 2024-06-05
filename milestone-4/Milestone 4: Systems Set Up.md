@@ -1,4 +1,4 @@
-# Milestone 5: Systems Set Up
+# Milestone 4: Systems Set Up
 
 ## Objective:
 
@@ -183,7 +183,6 @@ Run these commands to set up your web server. Since this is not a web class the 
 1. Set access rights to the different directories and files
 1. Connect all the workstation computers to the central file server
 1. Test CRUD operations from the workstation computers on the file server
-
 
 ### Step 4: Vulnerability Scanning
 
