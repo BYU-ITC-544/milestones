@@ -114,7 +114,6 @@ You will need to work out how much of the following your design will need. We wi
 1. Physical workstations and any peripherals or cables (power, mouse, keyboard, monitors, monitor cables)
 1. Total RAM, CPU, and storage needed for all VMs (We may have to adjust this depending on available resources, we will provide server resources  to host your VMs)
 1. Networking hardware (switches, cables, AP, etc.) - You will be making your own ethernet cables and they must be correctly made to a good standard. Simply passing the cable test will not be sufficient.
-1. Printer
 
 ### Submission Requirements
 
