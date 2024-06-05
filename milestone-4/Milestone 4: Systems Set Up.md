@@ -107,7 +107,7 @@ You should be prompted for the password of `betterblog`. If everything is set up
 
 ### Step 2: Web Server 
 
-Run these commands to set up your web server. Since this is not a web class the TAs will assist if needed in getting your database setup. 
+Run these commands to set up your web server. Since this is not a web class the TAs will assist if needed in getting your website setup. 
 
 1. Start by installing the web server software
     ```bash
