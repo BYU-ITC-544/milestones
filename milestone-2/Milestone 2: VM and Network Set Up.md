@@ -30,6 +30,21 @@ You will have to make the majority of the network cables yourselves, the only ex
 
 You'll need to configure the virtual switches and VLANs on your firewall and in your hypervisor. We'll have a discussion in class about how you might want to set it up for your network and what the physical and logical topologies will look like.
 
+Each team has 10 vlans assigned to it. The VLANs assigned to your team can be found below.
+
+| Team Number | VLAN Range|
+| - | -- |
+| 1  |   200-209 |
+| 2  |   210-219 |
+| 3  |   220-229 |
+| 4  |   230-239 |
+| 5  |   240-249 |
+| 6  |   250-259 |
+| 7  |   260-269 |
+| 8  |   270-279 |
+| 9  |   280-289 |
+| 10 |	 290-299 |
+
 ### Step 4: Firewall & Router
 
 You can use PfSense or Opnsense as the firewall and router for this class and must have specific firewall rules implemented to avoid disrupting the IT&C network. You can use another solution if your team wants to but don't expect TA help to get it set up.
