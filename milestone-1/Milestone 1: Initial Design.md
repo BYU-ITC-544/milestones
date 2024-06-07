@@ -44,6 +44,8 @@ As a minimum, you should use:
 - 1x Desktop Linux of your choice
 - 4x Linux Servers
 
+You will be given a total of 10 VLANs for your network, you may use less than 10 but no more.
+
 ## Instructions:
 
 This will just be an initial design and you will be expected to make changes to it throughout the semester as you learn more about these systems.
