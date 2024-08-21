@@ -19,8 +19,7 @@ Here are the objectives of each technology:
    DHCP (Dynamic Host Configuration Protocol) is a protocol used to automatically assign IP addresses and network configuration information to devices on a network. Its objective is to simplify network administration by centralizing IP address management and reducing the risk of conflicts and errors.
 
 5. Group Policies:
-   Group Policies are a set of rules that define how computers and users should be configured in a Windows-based network. Their objective is to simplify network administration by enabling administrators to apply consistent settings and configurations across multiple devices and users. Group Policies can be used to manage security settings, network connections, software installation, and many other aspects of system configuration.
-
+   Group Policies are a set of rules that define how computers and users should be configured in a Windows-based network. Their objective is to simplify network administration by enabling administrators to apply consistent settings and configurations across multiple devices and users. Group Policies can be used to manage security settings, network connections, software installation, and many other aspects of system configuration
 
 ## Instructions:
 

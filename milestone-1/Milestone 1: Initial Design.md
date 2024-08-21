@@ -27,7 +27,7 @@ You are the new IT department for Spicy Cluck Co. which is a company that has a 
 - **Onsite Backup Server**:
     - Store backups of critical data and systems locally for quick recovery.
 - **VPN Server(s)**:
-    - Set up VPN servers to allow remote and hybrid workers secure access to the network.
+    - Set up VPN server(s) to allow remote and hybrid workers secure access to the network.
 - **Desktop Linux Machine**:
     - Provide additional desktop Linux machines for administrative tasks and development work.
 - **DHCP Server**:
@@ -53,8 +53,6 @@ This will just be an initial design and you will be expected to make changes to 
 You will need to create the needed tables, figures, diagrams, etc. to plan out and explain your design. This will not be your final draft and it will most likely change as you implement it over the semester but it still must be complete and include all the items below. 
 
 There will be 1 deliverable for this assignment, a written technical document that will outline the design requirements, network design, and software/technologies that you plan to use.
-
-Please review the grading rubric for the level of detail that is expected.
 
 ### Step 1: Technologies & Software
 
@@ -82,6 +80,7 @@ You don't have to use the above suggestions if you want to try something else ou
 ### Step 3: Other Design Considerations 
 
 1. Disaster Recovery
+1. Firewall rules
 1. Policies, frameworks, and laws that need to be followed
 1. Devices that should be a physical workstation vs a VM
 

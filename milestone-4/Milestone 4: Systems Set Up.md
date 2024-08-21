@@ -50,7 +50,7 @@ Run these commands to set up your database server.
 
     <div style="page-break-after: always"></div>    
 
-1. Create a new database and a user with permissions to access it, follow these steps:
+1. Create a new database and a user with permission to access it, follow these steps:
 
     1. Create a new database:
         ```sql
