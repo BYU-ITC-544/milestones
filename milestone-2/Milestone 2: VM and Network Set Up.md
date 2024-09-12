@@ -53,18 +53,7 @@ You can use PfSense or Opnsense as the firewall and router for this class and mu
 1. Install all of the VMs. Just do a basic install, all the setup will be done in a later milestone or you can do it now if you choose to do so.
 1. After you've finished the setup check all the VMs are in the correct VLAN and have access to the correct resources using the firewall rules.
 
-You just need to do the initial setup for each of the VMs, configuring them will come in later labs. This is the minimum list but if your design may require more. 
-
-1. 2x Windows Server 2022
-1. 4x Windows 10
-1. 1x CentOS-7 or CentOS 8 
-1. 1x Debian 10.0.0 or later 
-1. 2x Desktop Linux of your choice, at least two different flavors and not Ubuntu
-1. 4x Linux Servers
-
-You will need to install a web server on your chosen web server VM to test the port forwarding. 
-
-These machines will be used for your milestones throughout this semester.
+1. You will need to install a web server on your chosen web server VM to test the port forwarding. 
 
 ### Step 6 Documentation:
 
