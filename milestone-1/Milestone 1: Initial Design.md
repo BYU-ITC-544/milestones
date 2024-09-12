@@ -118,6 +118,13 @@ You will need to work out how much of the following your design will need. We wi
 
 ### Submission Requirements
 
-Combine all of your design components into a single detailed technical document. Make sure to include a contents project overview, scope and purpose, and summary at the end. It should also contain documentation for all the above steps. Please refer to the grading rubric to see everything that must be included.
+Combine all of your design components into a single detailed technical document. Make sure to include a table of contents, project overview, scope and purpose, and summary at the end. It should also contain documentation for all the above steps, Including:
 
-Submit the written technical report a PDF format, the presentation should also be submitted as a PDF.
+1. A network diagram with IP addresses, VLANs (max 10), Subnets, etc.
+1. Justify your design decisions and state any assumptions that you have made
+1. Disaster Recovery & Firewall rules outline
+1. Policies, frameworks, and laws that need to be followed
+1. Devices that should be a physical workstation vs a VM
+1. Any technologies & software you will be using
+
+Submit the written technical report in a PDF format.
