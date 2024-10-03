@@ -68,8 +68,8 @@ Create 1 report for your team and submit the link to Learning Suite as a PDF, an
 - IP address
 - Internet access  
 
-[ ] 10 Points - Table showing the name and description of each host
+[ ] 10 Points - Table showing the name and description of each host  
 [ ] 10 Points - Screenshot(s) showing your network configurations on the hypervisor  
-[ ] 15 Points - Screenshot(s) showing the VLANs set up and switch config 
+[ ] 15 Points - Screenshot(s) showing the VLANs set up and switch config   
 [ ] 10 Points - List of all implemented firewall rules and why it is a rule  
 [ ] 5 Points - The port forwarding for the webserver is working correctly 
