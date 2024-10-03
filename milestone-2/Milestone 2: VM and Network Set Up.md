@@ -43,7 +43,7 @@ Each team has 10 VLANs assigned to it. The VLANs assigned to your team can be fo
 
 ### Step 4: Firewall & Router
 
-You can use PfSense or Opnsense as the firewall and router for this class and must have specific firewall rules implemented to avoid disrupting the CSRL network. You can use another solution if your team wants to but don't expect TA help to get it set up.
+You can use PfSense or Opnsense as the firewall and router for this class. You can use another solution if your team wants to but don't expect TA help to get it set up.
 
 1. Install your firewall as your first VM and make sure that your connection to the internet is working correctly
 1. Set up all of your VLANs and firewall rules, you may want to install one machine in each VLAN to test if they are working as expected.
