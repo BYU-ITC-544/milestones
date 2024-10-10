@@ -6,6 +6,9 @@ Configure the:
 - Web server
 - Database server
 - File server
+- Vulnerability Scanner
+- VPN server
+- SIEM (Extra Credit)
 
 ## Instructions:
 
@@ -207,6 +210,7 @@ Run these commands to set up your web server. Since this is not a web class the 
 1. **Update Your Risk Assessment**  
    - Update your risk assessment by incorporating any newly discovered risks and corresponding mitigations.
    - Optionally, use one team member's Homework 2 as a base for your updated assessment and include it in your documentation for this milestone.
+
 ### Step 5: VPN Server
 
 - Set up a VPN server to allow remote and hybrid workers access to necessary resources.
@@ -222,13 +226,12 @@ Run these commands to set up your web server. Since this is not a web class the 
 
 - Select a SIEM solution that best suits your network. Some possibilities are (Splunk, ELK Stack (Elasticsearch, Logstash, Kibana), and Security Onion)
 - Consider which devices you need to and can collect logs from. Possibilities include:
-   - workstations
-   - servers
-   - routers
-   - switches
-   - hypervisors
+   - Workstations
+   - Wervers
+   - Eouters
+   - Hypervisor
 - Set up your chosen SIEM solution and collect logs from the necessary devices
-- Use preset default or set up some of your own alerts and then trigger them to test they are working as intended
+- Use preset default or set up some of your own alerts and then trigger them to test they are working as intended but you will need at least 5 working and useful alerts.
 
 ### Extra Credit
 
@@ -251,7 +254,7 @@ Run these commands to set up your web server. Since this is not a web class the 
 - 20 Points - VPN Server
     - The VPN server has been set up to meet all of the specified criteria  
 - 10 Points - A vulnerability scanning tool has been installed  
-- 20 Points - Vulnerability Scanning of all VMs and workstations has been completed and schedules  are set to scan the network at regular intervals   
+- 20 Points - Vulnerability Scanning of all VMs and workstations has been completed and schedules are set to scan the network at regular intervals   
 - 20 Points - Document all the config files and explain and security principles and practices used  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
