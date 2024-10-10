@@ -57,9 +57,10 @@ Create documentation for each step that would be useful for other system adminis
    - Database Server
    - File Server
    - Primary AD Server
-   - Back up AD Server  
+   - Back up AD Server
+ 
 [ ] 5 Points - All general machines receive an IP address from DHCP  
-[ ] 20 Points - Firewall rules have been updated to reflect the principle of least privilege always applies
+[ ] 20 Points - Firewall rules have been updated to reflect the principle of least privilege always applies  
 [ ] 40 Points - Documentation  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
