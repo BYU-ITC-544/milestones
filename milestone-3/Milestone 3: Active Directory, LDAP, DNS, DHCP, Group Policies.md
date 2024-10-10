@@ -29,25 +29,28 @@ Set up your Windows 2022 Server as a domain controller and use it for AD. You wi
 
 ### Step 2: DNS
 
-Use the VM you designated as a DNS server to set up an internal DNS server. You should also configure your router to point DNS requests toward this server. You can use any DNS solution to create a DNS server on any of the Linux VMs. The DNS server should be able to resolve internal domain names for all the services correctly. For example, if you wanted to access the file server navigating to `website.sysadmin.local` should allow the user to access the company website.
+Use the VM you designated as a DNS server to set up an internal DNS server. You should also configure your router to point DNS requests toward this server. You can use any DNS solution to create a DNS server on any of the Linux VMs. The DNS server should be able to correctly resolve internal domain names for all the services. For example, if you wanted to access the web server navigating to `website.sysadmin.local` should allow the user to access the company website.
 
 ### Step 3: DHCP
 
-All general-use machines should have their IP assigned via DHCP using either the router or Windows Server. All critical services should have their IP statically set.
+All general-use machines should have their IP assigned via DHCP using either the router or Windows Server, and all critical services should have their IP set statically.
 
 ### Step 4: Group Policies
 
-Spicy Cluck Co. currently has 21 employees that will need login access to various systems. See `Milestone 1` for the list of users and their roles in the company. You will have to create different groups based on people's roles and what level of access they should have to various systems. 
+Spicy Cluck Co. currently has 21 employees who will need login access to various systems. See `Milestone 1` for the list of users and their roles in the company. You will have to create different groups based on people's roles and what level of access they should have to various systems. You must also create groups, permissions, and policies for all devices as well as the users.
+
+### Step 5: Firewall Review
+
+Review your firewall rules and make any necessary changes to secure your network. The principle of least privilege always applies. It will be pentested at the of the semester! 
 
 ### Step 5: Documentation
 
-Create documentation for each step that would be useful for other system administrators in the future detailing how you set up the different services and any design decisions that you made. You should also include creating, modifying, disabling, and deleting users from the domain and when each one should occur.
+Create documentation for each step that would be useful for other system administrators in the future detailing how you set up the different services and any design decisions that you made. You should also include creating, modifying, disabling, and deleting users from the domain and when each one should occur. DHCP setup, configuration, and maintenance along with current DHCP leases and statically assigned addresses. DNS setup, configuration, and maintenance along with current DNS records. Also make any updates to your network diagram(s) and tables, and any firewall rules you have added or changed.
 
 ### Requirements
 
-[ ] 10 Points - Primary Domain controller is working  
-[ ] 10 Points - Backup Domain controller is working  
-[ ] 5 Points - AD is set up and the admin user can log in to all systems  
+[ ] 15 Points - Primary and Backup Domain controller is working  
+[ ] 10 Points - The 21 employees and all devices have been assigned to appropriate groups and given permissions. All users can log into machines and access the system  
 [ ] 10 Points - DNS can resolve internally the:
    - DNS server
    - Web Server
@@ -55,9 +58,8 @@ Create documentation for each step that would be useful for other system adminis
    - File Server
    - Primary AD Server
    - Back up AD Server  
-
 [ ] 5 Points - All general machines receive an IP address from DHCP  
-[ ] 10 Points - The 20 employees have been assigned to appropriate groups and given permissions  
-[ ] 50 Points - Documentation  
+[ ] 20 Points - Firewall rules have been updated to reflect the principle of least privilege always applies
+[ ] 40 Points - Documentation  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
