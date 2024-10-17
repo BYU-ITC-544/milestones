@@ -43,7 +43,7 @@ Spicy Cluck Co. currently has 21 employees who will need login access to various
 
 Review your firewall rules and make any necessary changes to secure your network. The principle of least privilege always applies. It will be pentested at the of the semester! 
 
-### Step 5: Documentation
+### Step 6: Documentation
 
 Create documentation for each step that would be useful for other system administrators in the future detailing how you set up the different services and any design decisions that you made. You should also include creating, modifying, disabling, and deleting users from the domain and when each one should occur. DHCP setup, configuration, and maintenance along with current DHCP leases and statically assigned addresses. DNS setup, configuration, and maintenance along with current DNS records. Also make any updates to your network diagram(s) and tables, and any firewall rules you have added or changed.
 
