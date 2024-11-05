@@ -101,7 +101,7 @@ Run these commands to set up your database server.
 1. From your database machine, test the remote connection to ensure it works.
 
     ```bash
-    mariadb -u betterblog -p -h 192.168.1.2
+    mariadb -u betterblog -p -h <IP ADDRESS>
     ```
 
 You should be prompted for the password of `betterblog`. If everything is set up correctly, you will be connected to the MariaDB server.
