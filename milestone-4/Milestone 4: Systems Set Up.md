@@ -215,7 +215,7 @@ Run these commands to set up your web server. Since this is not a web class the 
 
 - Set up a VPN server to allow remote and hybrid workers access to necessary resources.
 - Authentication: Use both username/password and multi-factor authentication (MFA).
-- Public IP address for remote access: **128.187.49.252**.
+- Public IP address for remote access: **128.187.49.253**.
 - Port forwarding for VPN traffic: Your team's port can be found in Learning Suite under `Content > Proxmox`.
 - Ensure DNS resolution for internal resources.
 - Use strong encryption (AES-256 or higher).
