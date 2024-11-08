@@ -183,7 +183,7 @@ Run these commands to set up your web server. Since this is not a web class the 
 ### Step 3: File server
 
 1. **Set Up the Central File Server**  
-   - Install and configure a file server (e.g., NFS or Samba) on one of the Linux VMs.
+   - Install and configure a file server (e.g., NFS or Samba).
 
 1. **Set Access Rights**  
    - Define and assign appropriate access rights (read, write, execute) to different directories and files based on user roles.
