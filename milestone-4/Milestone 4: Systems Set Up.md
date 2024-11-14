@@ -225,10 +225,10 @@ Run these commands to set up your web server. Since this is not a web class the 
 ### Step 6: SIEM set up - Extra Credit
 
 - Select a SIEM solution that best suits your network. Some possibilities are (Splunk, ELK Stack (Elasticsearch, Logstash, Kibana), and Security Onion)
-- Consider which devices you need to and can collect logs from. Possibilities include:
+- Consider which devices you need to collect logs from and from which you can collect logs. Possibilities include:
    - Workstations
-   - Wervers
-   - Eouters
+   - Servers
+   - Routers
    - Hypervisor
 - Set up your chosen SIEM solution and collect logs from the necessary devices
 - Use preset default or set up some of your own alerts and then trigger them to test they are working as intended but you will need at least 5 working and useful alerts.
@@ -255,6 +255,6 @@ Run these commands to set up your web server. Since this is not a web class the 
     - The VPN server has been set up to meet all of the specified criteria  
 - 10 Points - A vulnerability scanning tool has been installed  
 - 20 Points - Vulnerability Scanning of all VMs and workstations has been completed and schedules are set to scan the network at regular intervals   
-- 20 Points - Document all the config files and explain and security principles and practices used  
+- 20 Points - Document all the config files and explain the security principles and practices used  
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
