@@ -17,10 +17,11 @@ As part of your final milestone, you will need to update your initial presentati
     - Network diagram (logical and physical)
     - Network tables (VLANs, subnets, IPs, etc.)
     - List all firewall rules and explain their purpose/function. Include any port forwarding rules in this section as well
-    - DNS resolution domains forward and backward lookups
-    - File server roles and access
-    - AD – Users, groups & any group policies
-    - Vulnerability scanner tasks, schedules, etc.
+    - DNS resolution domains forward and backward lookups and maintenance/update instructions 
+    - File server roles and access and maintenance/update instructions
+    - AD – Users, groups & any group policies and maintenance/update instructions
+    - Vulnerability scanner tasks, schedules, etc, and maintenance/update instructions
+    - VPN server and maintenance/update instructions
     - Backup & disaster recovery policy 
     - Separate files
         - Switch config & VLAN database
@@ -31,6 +32,7 @@ As part of your final milestone, you will need to update your initial presentati
         - AD configs 
         - Risk assessment
         - Most recent vulnerability scans for all devices
+        - VPN Server configs
 
 Make sure any images are clear and easy to read. The overall format and presentation should be professional, including spelling, punctuation, and grammar.
 
