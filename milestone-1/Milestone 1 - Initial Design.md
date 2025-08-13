@@ -213,19 +213,34 @@ Here’s an example **VLAN, Services, and Firewall Rules Table** that demonstrat
 | 100     | DMZ / Public Access | 10.0.100.0/24 | Public-facing services if needed | Allow WAN → DMZ TCP 80/443, Allow Management VLAN → DMZ TCP 22/443, Deny all other traffic                |
 
 ### Submission Requirements
+Documentation is a crucial part of being a system administrator. For this project, you will create a GitHub wiki to house all required technical documentation.
 
-Combine all design components into a **single detailed technical document**. Include:
+For this milestone the wiki should contain the following:
 
-1. Title/Cover page
-2. Table of contents
-3. Project overview, purpose, and objectives
-4. Technologies & software selection
-5. List of all hosts with hostnames, OS type, and version
-6. Devices categorized as physical workstations or VMs
-7. Logical and physical network diagrams with IP addresses, VLANs (max 10), and subnets
-8. Disaster recovery plan and firewall rules outline
-9. Policies, frameworks, and laws to be followed or created
-10. Justification of design decisions and any assumptions made at each step
-11. Any additional diagrams, tables, or figures needed for clarity
+1.  **Home / Overview**
+    - **Project Name:**
+    - **Team Members:**
+    - **Project Objective:** 
+    - **Current Milestone:**
+    - **Last Updated:**
+1. **Scope & Objectives**
+1. **Technologies & Software**
+1. **Network Design**
+    - Logical Diagram
+    - Physical Diagram
+    - VLAN Table
+1. **Hosts Inventory**
+1. **Firewall Rules**
+1. **Policies**
+    -  Disaster Recovery
+    - Acceptable Use Policy (AUP)
+    - Password & Access Control Policies
+    - Data Retention & Disposal
+    - Remote Access Policy
+1. **Hardware Planning**
+1. **Assumptions & Justifications**
 
-**Format:** PDF, with all text, tables, and images legible and readable.
+Submit the link to your wiki to Learning Suite
+
+
+
