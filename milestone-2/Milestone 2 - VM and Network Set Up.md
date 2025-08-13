@@ -28,6 +28,7 @@ You'll need to configure the virtual switches and VLANs on your firewall and in 
 
 Each team has 10 VLANs assigned to it. The VLANs assigned to your team can be found below.
 
+
 | Team Number | VLAN Range|
 | - | -- |
 | 1  |   200-209 |

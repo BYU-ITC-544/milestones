@@ -21,6 +21,7 @@ Disaster recovery is not just a reactive measure; it is a proactive strategy tha
 
 It is recommended that you consult with a TA to ensure that your policy meets the requirements. Select one backup policy one of your team members wrote in homework 5 and implement it. For off-site backups, we have a small Synology device that will act as the 'off-site backup'. Ask the TA how you can access it and use it as a backup device. You can use it as either hot or cold backup storage.
 
+
 ## Step 1: Implementation
 
 Designate one or more of your servers as the backup server that will contain the backups of all other VMs.

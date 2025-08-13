@@ -4,6 +4,7 @@
 
 Given a list of requirements, your team will design a network and choose the software solution(s) that you will use to achieve your objectives. This will not be an all-inclusive design and will mostly outline what you plan to do, and you will add to it as the semester progresses.
 
+
 ## Requirements
 
 You are the new IT department for Spicy Cluck Co. which is a company that has a chain of fried chicken stores across the United States and Europe. Your team has been tasked with setting up a new regional office in Provo, Utah. The office needs to have the following services and systems:
@@ -36,7 +37,7 @@ You are the new IT department for Spicy Cluck Co. which is a company that has a 
    - Implement a Security Information and Event Management system for monitoring and analyzing security events and incidents across the network.
 - **Metric Server**
    - Implement a resource monitoring server in Proxmox and set up usage and availability alerts.
-   
+
 As a minimum, you should use:
 
 - 2x Windows servers 2022
@@ -77,6 +78,11 @@ You don't have to use the above suggestions if you want to try something else ou
 ### Step 2: Network Diagram 
 
 1. Create network diagrams (Logical and physical) that meet the above requirements. This should be two separate diagrams.
+
+
+### Step 2: Network Diagram 
+
+1. Create a network diagram that meets the above requirements
 1. Include what IP addresses (use 10.0.0.0/8 addresses), VLANs (max 10), Subnets, etc. you will use (These should be in the diagram and a separate table)
 1. Justify your design decisions and state any assumptions that you have made
 
@@ -100,6 +106,7 @@ This is a list of the users that will be using the system. Users will be a mix o
 1. Ben Anderson - Sales Representative (In-person)
 1. Olivia Davis - Data Analyst (Remote)
 1. Eric Nguyen - Network Administrator (Hybrid)
+
 
 ### Step 4: Hardware
 
@@ -125,5 +132,3 @@ Combine all your design components into a single detailed technical document. Ma
 1. Justify your design decisions and state any assumptions that you have made at each step
 
 Submit the written technical report in a PDF format. Please make sure that all text, tables and images are readable and legible.
-
-
