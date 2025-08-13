@@ -2,65 +2,163 @@
 
 ## Technologies Overview:
 
-Active Directory, LDAP, DNS, DHCP, and Group Policies are all technologies commonly used in Windows-based networks to manage network resources, user access, and system configuration. 
+Active Directory, LDAP, DNS, DHCP, and Group Policies are key technologies for managing Windows-based networks. They allow centralized administration, user authentication, and configuration management across devices.
 
-Here are the objectives of each technology:
+**Objectives of Each Technology:**
 
-1. Active Directory: 
-   The primary objective of Active Directory is to provide a centralized authentication and authorization service for Windows-based networks. It enables administrators to manage user accounts, computers, and other network resources from a central location. Active Directory also provides features such as group policy management, software distribution, and security policies.
+1. Active Directory (AD):
+   - Provides centralized authentication and authorization.
+   - Allows administrators to manage users, groups, devices, and security policies.
+   - Supports software deployment, access control, and network resource management.
 
-2. LDAP:
-   LDAP (Lightweight Directory Access Protocol) is a protocol used for accessing and maintaining distributed directory information services over an IP network. Its main objective is to provide a standardized way to access and manage directory services, such as Active Directory.
+1. **LDAP (Lightweight Directory Access Protocol):**
+   - Standard protocol for accessing and maintaining directory services.
+   - Used by AD for querying and managing network directory data.
 
-3. DNS:
-   DNS (Domain Name System) is a protocol used to translate domain names into IP addresses. Its objective is to provide a way to identify and locate resources on a network using human-readable domain names instead of numeric IP addresses.
+1. **DNS (Domain Name System):**
+   - Translates human-readable domain names into IP addresses.
+   - Ensures that internal services and websites are reachable using friendly names.
 
-4. DHCP:
-   DHCP (Dynamic Host Configuration Protocol) is a protocol used to automatically assign IP addresses and network configuration information to devices on a network. Its objective is to simplify network administration by centralizing IP address management and reducing the risk of conflicts and errors.
+1. **DHCP (Dynamic Host Configuration Protocol):**
+   - Automatically assigns IP addresses and network configuration to devices.
+   - Simplifies network management and prevents IP conflicts.
 
-5. Group Policies:
-   Group Policies are a set of rules that define how computers and users should be configured in a Windows-based network. Their objective is to simplify network administration by enabling administrators to apply consistent settings and configurations across multiple devices and users. Group Policies can be used to manage security settings, network connections, software installation, and many other aspects of system configuration
+1. **Group Policies:**
+   - Apply consistent configuration and security settings across multiple devices.
+   - Control software installation, security policies, network access, and user permissions.
 
 ## Instructions:
 
-### Step 1: Active Directory, LDAP
+### Step 1: Active Directory & LDAP
 
-Set up your Windows 2022 Server as a domain controller and use it for AD. You will also need to configure the 2nd Windows 2022 Server as the backup domain controller and AD. All machines should be added to the domain. You should be able to log in to all the VMs using the admin credentials. 
+- Configure your **primary Windows Server 2022** as the **Domain Controller**.
+- Configure your **secondary Windows Server 2022** as a **backup Domain Controller** for redundancy.
+- Join all machines to the domain and ensure login is possible using AD credentials.
+- Document steps for:
+   - Creating users and groups
+   - Assigning permissions
+   - Modifying and disabling accounts
+   - Backup and restoration of AD
+
 
 ### Step 2: DNS
 
-Use the VM you designated as a DNS server to set up an internal DNS server. You should also configure your router to point DNS requests toward this server. You can use any DNS solution to create a DNS server on any of the Linux VMs. The DNS server should be able to correctly resolve internal domain names for all the services. For example, if you wanted to access the web server navigating to `website.sysadmin.local` should allow the user to access the company website.
+- Designate a Linux or Windows VM as the **internal DNS server**.
+- Configure your router/firewall to forward DNS queries to this server.
+- DNS should resolve internal hostnames for all services, e.g.:
+   - `website.sysadmin.local` → Web Server
+   - `db.sysadmin.local` → Database Server
+   - `files.sysadmin.local` → File Server
+   - `ad1.sysadmin.local` → Primary AD
+   - `ad2.sysadmin.local` → Backup AD\
+   - All windows hostnames to their IPs 
+- Document:
+   - DNS zones and records
+   - How to add, modify, and remove records
 
 ### Step 3: DHCP
 
-All general-use machines should have their IP assigned via DHCP using either the router or Windows Server, and all critical services should have their IP set statically.
+- Assign IP addresses dynamically for **general-use machines** using DHCP (either router or Windows Server).
+- Assign **static IPs** for all critical infrastructure services (servers, firewall, routers).
+- Document:
+  - DHCP scope(s)
+  - Reservations for critical devices
+  - Current leases
+
 
 ### Step 4: Group Policies
 
-Spicy Cluck Co. currently has 21 employees who will need login access to various systems. See `Milestone 1` for the list of users and their roles in the company. You will have to create different groups based on people's roles and what level of access they should have to various systems. You must also create groups, permissions, and policies for all devices as well as the users.
+- Organize the **10 employees** into groups based on role and access requirements.
+- Define **device groups** for servers, workstations, and administrative machines.
+- Policies that should be set include:
+   - Password & Security Policy
+      - Enforce minimum password length: 12 characters
+      - Require complex passwords
+      - Set account lockout after 5 failed login attempts
+   - Software Deployment
+      - Install approved business apps based on user group (e.g., CRM for Sales, Office Suite for Content)
+      - Restrict installation of unauthorized software
+   - Access Control
+      - Map network drives based on department (e.g., HR_Shared, Sales_Shared)
+      - Limit access to servers and admin consoles according to user group
+      - Multi-factor authentication enforced for all logins
+   - Administrative Rights
+      - IT Managers and Network Admins: Full admin on servers and devices relevant to IT operations
+      - Executives: Limited delegation for business-critical apps
+      - All other users: Standard user privileges; no local admin rights
+   - Device Configuration
+      - Enforce company-standard desktop configuration
+      - Restrict USB and removable media access for sensitive groups
+- Document
+   - Record all user accounts, group memberships, and assigned permissions.
+   - Document GPOs applied to each group, including enforcement settings.
+   - Include instructions for creating, modifying, disabling, or removing users and policies.
+
 
 ### Step 5: Firewall Review
 
-Review your firewall rules and make any necessary changes to secure your network. The principle of least privilege always applies. It will be pentested at the of the semester! 
+- Review and update firewall rules to ensure the **principle of least privilege** is enforced.
+- Confirm:
+   - Only required inter-VLAN communication is allowed
+   - Services like DNS, DHCP, AD, and web access are permitted
+- Include a **backup of current firewall rules** that can be imported if needed.
+- Document all firewall changes and justifications.
 
-### Step 6: Documentation
 
-Create documentation for each step that would be useful for other system administrators in the future detailing how you set up the different services and any design decisions that you made. You should also include creating, modifying, disabling, and deleting users from the domain and when each one should occur. DHCP setup, configuration, and maintenance along with current DHCP leases and statically assigned addresses. DNS setup, configuration, and maintenance along with current DNS records. Also make any updates to your network diagram(s) and tables, and any firewall rules you have added or changed.
+### Step 6: Testing
 
-### Requirements
+- Verify that:
+   - Users can log in to the domain
+   - DNS resolves all internal services
+   - DHCP assigns addresses correctly
+   - Group Policies are applied
+   - Firewall rules allow required traffic and block unauthorized access
+- Log all testing results in the wiki for reference and troubleshooting.
 
-[ ] 15 Points - Primary and Backup Domain controller is working  
-[ ] 10 Points - The 21 employees and all devices have been assigned to appropriate groups and given permissions. All users can log into machines and access the system  
-[ ] 10 Points - DNS can resolve internally the:
-   - DNS server
-   - Web Server
-   - Database Server
-   - File Server
-   - Primary AD Server
-   - Back up AD Server
- 
-[ ] 5 Points - All general machines receive an IP address from DHCP  
-[ ] 20 Points - Firewall rules have been updated to reflect the principle of least privilege always applies  
-[ ] 40 Points - Documentation  
+### Step 7: Documentation for the Wiki
 
-The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.
+Update your GitHub wiki with the following Milestone 3 sections:
+
+1. **Active Directory & LDAP**
+   - Primary and backup domain controllers
+   - User and group management procedures
+   - Backup and recovery procedures
+
+1. **DNS**
+   - DNS server configuration
+   - Zone and record setup
+   - Forwarding and resolution examples
+
+1. **DHCP**
+   - DHCP scope and reservation table
+   - List of statically assigned IPs
+
+1. **Group Policies**
+   - Policies applied to each user and device group
+   - Step-by-step procedures for creating/modifying policies
+
+1. **Firewall**
+   - Updated rules and rationale
+   - Backup of rules for re-import
+
+1. **Network Diagram Updates**
+   - Update logical and physical diagrams with any changes
+
+1. **Testing Results**
+   - Evidence of correct login, DNS resolution, DHCP assignment, policy application, and firewall enforcement
+
+
+### Checklist for Wiki Update
+
+- **Update the GitHub wiki** with all relevant Milestone 3 items
+- Ensure all sections are **clear, detailed, and organized** for future sysadmins.
+
+Sections that should be updated or created include:
+- [ ] AD & LDAP setup documented
+- [ ] User accounts and groups created, with permissions assigned
+- [ ] DNS setup, zones, and records documented
+- [ ] DHCP scopes, reservations, and static IPs listed
+- [ ] Group Policies documented per user/device group
+- [ ] Firewall rules reviewed, updated, and backup included
+- [ ] Network diagrams updated
+- [ ] Test results recorded and summarized
