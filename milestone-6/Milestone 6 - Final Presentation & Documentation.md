@@ -8,6 +8,7 @@ As part of your final milestone, you will need to update your initial presentati
     - Prepare a comprehensive presentation to the board of directors detailing the system you have developed.
     - The presentation should last between 10-12 minutes.
     - Focus on the key points of the system, presenting them in business terms that are understandable and relevant to the board.
+
 1. Final documentation packet
     - Cover page
     - Table of contents

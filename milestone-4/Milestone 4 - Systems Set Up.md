@@ -183,14 +183,11 @@ Run these commands to set up your web server. Since this is not a web class the 
 ### Step 3: File server
 
 1. **Set Up the Central File Server**  
-   - Install and configure a file server (e.g., NFS or Samba).
-
+   - Install and configure a file server (e.g., NFS or Samba) on one of the Linux VMs.
 1. **Set Access Rights**  
    - Define and assign appropriate access rights (read, write, execute) to different directories and files based on user roles.
-
 1. **Connect Workstation Computers**  
    - Connect all the workstation computers to the central file server, ensuring proper authentication and network configuration.
-
 1. **Test CRUD Operations**  
    - From each workstation, test **Create, Read, Update, and Delete** (CRUD) operations on the file server to verify that access rights and functionality are working as expected.
 
@@ -215,7 +212,8 @@ Run these commands to set up your web server. Since this is not a web class the 
 
 - Set up a VPN server to allow remote and hybrid workers access to necessary resources.
 - Authentication: Use both username/password and multi-factor authentication (MFA).
-- Public IP address for remote access: **128.187.49.253**.
+- Public IP address for remote access: **128.187.49.252**.
+
 - Port forwarding for VPN traffic: Your team's port can be found in Learning Suite under `Content > Proxmox`.
 - Ensure DNS resolution for internal resources.
 - Use strong encryption (AES-256 or higher).
@@ -255,6 +253,7 @@ Run these commands to set up your web server. Since this is not a web class the 
     - The VPN server has been set up to meet all of the specified criteria  
 - 10 Points - A vulnerability scanning tool has been installed  
 - 20 Points - Vulnerability Scanning of all VMs and workstations has been completed and schedules are set to scan the network at regular intervals   
-- 20 Points - Document all the config files and explain the security principles and practices used  
+- 20 Points - Document all the config files and explain and security principles and practices used  
+
 
 The lab pass-off will be done with a TA and the documentation should be uploaded to Learning Suite. Documentation must be submitted as a PDF.

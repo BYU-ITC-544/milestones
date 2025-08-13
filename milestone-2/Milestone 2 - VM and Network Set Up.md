@@ -26,7 +26,8 @@ You will have to make the majority of the network cables yourselves, the only ex
 
 You'll need to configure the virtual switches and VLANs on your firewall and in your hypervisor. We'll have a discussion in class about how you might want to set it up for your network and what the physical and logical topologies will look like.
 
-Each team has 10 VLANs assigned to it and all VLANs used must be in your range. The VLANs assigned to your team can be found below.
+Each team has 10 VLANs assigned to it. The VLANs assigned to your team can be found below.
+
 
 | Team Number | VLAN Range|
 | - | -- |
