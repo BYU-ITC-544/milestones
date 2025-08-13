@@ -8,53 +8,53 @@ Given a list of requirements, your team will design a network and choose the sof
 
 You are the new IT department for Spicy Cluck Co., a company that has a chain of fried chicken stores across the United States and Europe. Your team has been tasked with setting up a new regional office in Provo, Utah. The office needs to have the following services and systems:
 
-- **DNS Linux Server**:
+- **DNS Linux Server**
   - Resolve internal and external requests.
   - Integrate with AD for internal name resolution.
 
-- **Active Directory (AD)**:
+- **Active Directory (AD)**
   - Manage users, groups, and permissions.
   - Integrate with LDAP-compatible services if needed.
 
-- **Backup Active Directory**:
+- **Backup Active Directory**
   - Secondary AD server for redundancy and disaster recovery.
   - Ensure replication and time synchronization with primary AD.
 
-- **Database Server**:
+- **Database Server**
   - Implement the database structure provided for the website.
   - Secure access and backups.
 
-- **Web Server**:
+- **Web Server**
   - Host the official website on the public internet.
   - Implement SSL/TLS and proper firewall rules.
 
-- **File Server**:
+- **File Server**
   - Central file storage for documents, files, and resources.
   - Implement permissions according to roles.
 
-- **Linux Machine for General Use**:
+- **Linux Machine for General Use**
   - Provide a Linux workstation for administrative tasks and development work.
 
-- **General Workstations**:
+- **General Workstations**
   - Workstations for employees to use for daily tasks.
   - Configure based on user type (in-person, hybrid, remote).
 
-- **Onsite Backup Server**:
+- **Onsite Backup Server**
   - Store backups of critical data and systems locally for quick recovery.
   - Schedule regular backups and test restores.
 
-- **VPN Server(s)**:
+- **VPN Server(s)**
   - Provide secure remote access for hybrid and remote workers.
   - Implement multi-factor authentication where possible.
 
-- **Desktop Linux Machine**:
+- **Desktop Linux Machine**
   - Provide additional desktop Linux machines for administrative tasks and development work.
 
 - **DHCP Server**:
   - Manage and assign IP addresses dynamically to devices within the network.
   - Configure reservations for servers and critical devices.
 
-- **SIEM Server**:
+- **SIEM Server**
   - Implement a Security Information and Event Management system for monitoring and analyzing security events and incidents across the network.
   - Centralize logs from all critical devices.
   - Install endpoint protection on devices.
@@ -62,6 +62,11 @@ You are the new IT department for Spicy Cluck Co., a company that has a chain of
 - **Metric Server**
   - Implement a resource monitoring server in Proxmox and set up usage and availability alerts.
   - Monitor VM resource usage and network statistics.
+
+- **Vulnerability Scanner**
+  - Scan network devices, servers, and workstations for security vulnerabilities.
+  - Generate reports for patching, misconfigurations, and security improvements.
+
 
 **Minimum Hardware/VM Allocation:**
 
