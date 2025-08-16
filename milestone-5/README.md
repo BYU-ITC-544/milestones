@@ -188,3 +188,8 @@ The Disaster Recovery Policy provides a structured approach to restoring systems
 - The completed Milestone 5 documentation must be **uploaded to the project wiki**.
 - Ensure that all sections are complete, clearly formatted, and accessible to other system administrators.
 - Include references to any diagrams, policies, scripts, or configuration files that support the backup and DR plan.
+
+### Grading
+
+- **50 Points** — Backup Policy
+- **50 Points** — DR Policy
