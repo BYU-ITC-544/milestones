@@ -147,18 +147,57 @@ Update your GitHub wiki with the following Milestone 3 sections:
 1. **Testing Results**
    - Evidence of correct login, DNS resolution, DHCP assignment, policy application, and firewall enforcement
 
-
 ### Checklist for Wiki Update
 
-- **Update the GitHub wiki** with all relevant Milestone 3 items
-- Ensure all sections are **clear, detailed, and organized** for future sysadmins.
+- Create a page for **AD & LDAP Setup** with (10 Points):
+   - Domain creation and configuration steps
+   - LDAP schema and integration details
+   - Replication settings and verification steps
+   - Troubleshooting and common errors
 
-Sections that should be updated or created include:
-- [ ] AD & LDAP setup documented
-- [ ] User accounts and groups created, with permissions assigned
-- [ ] DNS setup, zones, and records documented
-- [ ] DHCP scopes, reservations, and static IPs listed
-- [ ] Group Policies documented per user/device group
-- [ ] Firewall rules reviewed, updated, and backup included
-- [ ] Network diagrams updated
-- [ ] Test results recorded and summarized
+- Create a page for **User Accounts & Groups** with (10 Points):
+   -  List of created users and groups
+   -  Role-based permission assignments
+   -  Account policies (passwords, lockouts, expirations)
+   -  Documentation of administrative vs. standard accounts
+
+- Create a page for **Group Policies** with (10 Points):
+   - Policies applied to user groups
+   - Policies applied to device groups
+   - Security baselines and compliance settings
+   - Testing and verification of GPO effectiveness
+
+- Create a page for **DNS Configuration** with (20 Points):
+   - Forward and reverse lookup zones
+   - Host (A/AAAA), CNAME, MX, PTR, and SRV records
+   - Zone transfer and replication configuration
+   - Troubleshooting common DNS resolution issues
+
+- Create a page for **DHCP Setup** with (20 Points):
+   - Defined scopes and address ranges
+   - Reservations for specific devices
+   - Static IP assignments and justifications
+   - Failover configuration and troubleshooting
+
+- Create a page for **Firewall Rules** with (20 Points):
+   - Current inbound and outbound rules
+   - Changes and updates made to rules
+   - Backup of rule sets and export procedure
+   - Rule justification and security considerations
+
+- Create a page for **Network Diagrams** with (10 Points):
+   - Updated topology maps (logical and physical)
+   - Device roles and interconnections
+   - VLANs and subnet documentation
+
+**Important Note on Scoring**
+Points will only be awarded if both the documentation **and** the corresponding system features are fully implemented and operational. This means:
+
+- **Documentation Accuracy** – All pages must provide clear, complete, and up-to-date information reflecting the current configuration and setup.
+- **Functional Verification** – Each documented feature (e.g., VPN server, SIEM alerts, file server permissions) must be installed, configured, and tested to confirm it works as described.
+- **Consistency** – Any changes made to the system during implementation must be reflected in the documentation to avoid mismatches.
+- **Evidence of Operation** – Screenshots, test results, or verification steps must be included in the documentation where applicable to prove that the feature is functioning.
+
+If the documentation is present but the feature is not functional (or vice versa), **no points will be awarded** for that section.
+
+
