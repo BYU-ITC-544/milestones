@@ -159,61 +159,107 @@ At the end of this milestone, your team should have all physical and virtual mac
     - Update tags/pools as systems change
 
 
-### Step 7: Documentation
+### Step 7: Documentation for the Wiki
 
-Documentation is a crucial part of being a sys admin. For the technical documenation you will create a wiki that contains all the needed technical documenation
+Documentation is a crucial part of being a sysadmin. For Milestone 2, your team must create and update Wiki pages that fully document your VM installations, firewall rules, VLAN configurations, and Proxmox organization. All documentation must include **proof of operation** (screenshots, logs, test results) and must stay consistent with the actual configuration.
 
-- Update Milestone 1 diagrams and tables to reflect changes.
-- Record all test results as a baseline for troubleshooting.
+Additionally, **all physical cables must pass testing and be built to a professional standard**. Improperly terminated or untested cables will result in lost points.
 
-### Submission Requirements
+### Milestone 2 Wiki Sections
 
-**Home / Overview**
-- Update **Current Milestone** to “Milestone 2: VM and Network Set Up.”
-- Add the date of the latest update.
-- Include a short summary of progress (e.g., “All VMs installed, firewall configured, VLANs segmented”).
+1. **Updates Only (Technologies & Software)**
+    - Document **only updates or changes** to OS versions, firewall software, web server software, and hypervisor tools.
+    - Include verification screenshots or command outputs where changes are made.
 
-**Technologies & Software**
-- Add OS versions for each VM (Windows Server 2022, Windows 10/11, Linux flavors).
-- Include firewall software (OPNsense/PfSense), web server software, and any hypervisor tools (Proxmox version, network plugins).
+1. **Network Design**
+   - Updated **Logical Diagram** (VLAN assignments, switch port bonding, firewall/router placement).
+   - Updated **Physical Diagram** (VM placement, switch connections, WAN connectivity).
+   - **VLAN Table** with IDs, names, and usage.
+   - Confirmation that physical cables are correctly terminated, tested, and bonded with LACP where required.
 
-**Network Design**
-- Update **Logical Diagram** to reflect VLAN assignments, switch port bonding, and firewall/router placement.
-- Update **Physical Diagram** to show actual VM placement, switch connections, and WAN connectivity.
-- Update **VLAN Table** to include IDs, names, and intended usage (servers, workstations, management, guest Wi-Fi).
+1. **Hosts Inventory**
+    - Complete table for all VMs and physical machines including:
+        - Hostname
+        - IP address (static or DHCP)
+        - Assigned VLAN
+        - Role (Web server, DB server, workstation, etc.)
+        - Local backup admin account created
+        - Status (installed/configured/tested)
+    - Screenshots verifying installation/configuration.
 
-**Hosts Inventory**
-- Add all installed VMs and physical machines with:
-  - Hostname
-  - IP address (static or DHCP assigned)
-  - Assigned VLAN
-  - Role (Web server, DB server, workstation, etc.)
-  - Backup local admin account created
-  - Status (installed / configured / tested)
-- Include screenshots where possible to validate VM setup.
+1. **Router**
+    - Document router role (edge routing, DHCP relay, static routes).
+    - WAN interface configuration (IP, gateway, DNS).
+    - Internal interface configurations (VLAN interfaces, routing tables).
+    - Routing protocol setup (if applicable: static, OSPF, etc.).
+    - NAT configuration.
+    - Connectivity test evidence (ping/traceroute to external sites, routing table screenshots).
 
-**Firewall Rules**
-- Include all rules created, following least privilege principle:
-    - Source, destination, ports, protocols
-    - Rule type (allow/block)
-    - Rule ordering and justification
-- Include evidence of tested rules (ping, traceroute, service access).
-- Mention default deny rule and auto-generated rules.
-- Include a backup of the current firewall rules that can be imported if needed.
+1. **Firewall Rules**
+    - Document all rules created:
+        - Source, destination, ports, protocols
+        - Rule type (allow/block)
+        - Rule ordering and justification
+    - Include evidence of tested rules (ping, traceroute, DNS resolution, service access).
+    - Backup/export of firewall configuration included.
+    
+7. **Hardware Planning**
+    - Document Proxmox allocations:
+        - Storage, RAM, CPU per VM
+        - Physical workstation connections and switch ports
+        - Cable assignments and LACP bonding configuration
+    - Document VM tagging and pooling strategy.
 
-**Policies**
-- Update **Disaster Recovery** section to reflect VM snapshot strategy.
-- Include notes on testing procedures for connectivity and firewall verification.
-- Ensure local admin account policies and VLAN segregation principles are documented.
+8. **Assumptions & Justifications**
+    - Note assumptions about VLAN usage, IP assignments, service dependencies.
+    - Justify firewall rules, VLAN segmentation, and port assignments.
+    - Rationale for creating local backup admin accounts.
 
-**Hardware Planning**
-- Update to reflect Proxmox resources used:
-    - Storage, RAM, CPU allocated per VM.
-    - Physical workstation connections and switch ports used.
-    - Cable assignments and LACP bonding info.
-- Include VM tagging and pooling strategy in Proxmox.
 
-**Assumptions & Justifications**
-- Note any assumptions made about VLAN usage, IP assignments, or service dependencies.
-- Justify why certain firewall rules, VLAN segmentation, or port assignments were chosen.
-- Include rationale for creating local backup admin accounts on servers/workstations.
+### Checklist for Wiki Update
+ 
+- Update the for **Technologies & Software** with (10 Points):
+    - Changes to OS/software documented
+    - Firewall/web/hypervisor updates included
+    - Verification screenshots provided
+
+- Update the page for **Network Design** with (20 Points):
+    - Updated logical and physical diagrams
+    - VLAN table completed and accurate
+    - Physical cable testing results and bonding configuration documented
+
+- Update the page for **Hosts Inventory** with (10 Points):
+    - Hostnames, IPs, VLANs, roles, statuses documented
+    - Local backup admin accounts listed
+    - Screenshots of installation/configuration included
+
+- Update the page for **Firewall Rules** with (20 Points):
+    - All rules listed with details
+    - Evidence of tested rules provided
+    - Backup/export attached
+
+- Create a page for the **Router** (20 pts) with:
+    - WAN + internal interface configs documented
+    - Static/dynamic routes listed
+    - NAT configuration included
+    - Routing table screenshots included
+    - Connectivity test results provided
+    - Config backup included
+
+- Update the page for **Hardware Planning** with (20 Points):
+    - Proxmox resource allocations detailed
+    - Switch/cable assignments documented
+    - VM tagging/pooling explained
+
+
+### Important Note on Scoring
+
+Points are awarded only if the **documentation matches the implemented system**:
+
+* **Documentation Accuracy** – Must reflect the actual network/VM setup.
+* **Functional Verification** – Every documented feature must be installed, configured, and tested.
+* **Consistency** – All system changes must be updated in the Wiki.
+* **Evidence of Operation** – Screenshots, logs, or test results must be included.
+* **Cable Verification** – All physical cables must be tested and documented as passing to standard.
+
+If documentation exists but the feature (or cable build) is not functional, **no points will be awarded**.
