@@ -119,6 +119,26 @@ Choose the technologies & software that you will use. Several technologies you m
   - Redundant paths for critical systems
   - Choice of private IP ranges for internal communication
 
+- Each team has **10 VLANs** to use. VLAN IDs, switch ports, and WAN IP ranges are assigned as follows:
+
+| Team Number | VLAN Range| Switch Ports | VPN Port | WAN IP Range | Proxmox URL |
+| -- | ------- | ----- | ---- | --------------------------| ------------------------- |
+| 1  | 200-209 | 13-14 | 1347 | 172.16.40.10-172.16.40.11 | https://172.16.40.10:8006 |
+| 2  | 210-219 | 15-16 | 1348 | 172.16.40.12-172.16.40.13 | https://172.16.40.12:8006 |
+| 3  | 220-229 | 17-18 | 1349 | 172.16.40.14-172.16.40.15 | https://172.16.40.14:8006 |
+| 4  | 230-239 | 19-20 | 1350 | 172.16.40.16-172.16.40.17 | https://172.16.40.16:8006 |
+| 5  | 240-249 | 21-22 | 1351 | 172.16.40.18-172.16.40.19 | https://172.16.40.18:8006 |
+| 6  | 250-259 | 23-24 | 1352 | 172.16.40.20-172.16.40.21 | https://172.16.40.20:8006 |
+| 7  | 260-269 | 25-26 | 1353 | 172.16.40.22-172.16.40.23 | https://172.16.40.22:8006 |
+| 8  | 270-279 | 27-28 | 1354 | 172.16.40.24-172.16.40.25 | https://172.16.40.24:8006 |
+| 9  | 280-289 | 29-30 | 1355 | 172.16.40.26-172.16.40.27 | https://172.16.40.26:8006 |
+| 10 | 290-299 | 31-32 | 1356 | 172.16.40.28-172.16.40.29 | https://172.16.40.28:8006 |
+
+- Both assigned switch ports **must be used** and properly bonded for LACP.
+- The first IP in the WAN IP range is already assigned to Proxmox; the second is used for your router WAN interface.
+
+
+
 ### Step 3: Other Design Considerations
 
 #### 1. Disaster Recovery
@@ -217,35 +237,98 @@ Here’s an example **VLAN, Services, and Firewall Rules Table** that demonstrat
 | 90      | Admin Linux         | 10.0.90.0/24  | Linux Admin/Desktop Machines     | Allow Admin VLAN → all servers (necessary ports only), Allow Admin → VPN TCP 1194, Deny all else          |
 | 100     | DMZ / Public Access | 10.0.100.0/24 | Public-facing services if needed | Allow WAN → DMZ TCP 80/443, Allow Management VLAN → DMZ TCP 22/443, Deny all other traffic                |
 
-### Submission Requirements
-Documentation is a crucial part of being a system administrator. For this project, you will create a GitHub wiki to house all required technical documentation.
 
-For this milestone the wiki should contain the following:
+## Step 5: Presentation
 
-1.  **Home / Overview**
-    - **Project Name:**
-    - **Team Members:**
-    - **Project Objective:** 
-    - **Current Milestone:**
-    - **Last Updated:**
-1. **Scope & Objectives**
-1. **Technologies & Software**
-1. **Network Design**
-    - Logical Diagram
-    - Physical Diagram
-    - VLAN Table
-1. **Hosts Inventory**
-1. **Firewall Rules**
-1. **Policies**
-    -  Disaster Recovery
-    - Acceptable Use Policy (AUP)
-    - Password & Access Control Policies
-    - Data Retention & Disposal
-    - Remote Access Policy
-1. **Hardware Planning**
-1. **Assumptions & Justifications**
+You will prepare and deliver a **10–15 minute presentation** that clearly communicates the project proposal, design decisions, and expected outcomes. This ensures you can explain your work effectively, defend your choices, and receive feedback before full implementation.
 
-Submit the link to your wiki to Learning Suite
+### Requirements
+
+- **Format & Duration**
+  - Presentation length: **10–15 minutes**
+  - Format: Slides 
+  - Q\&A session: **5 minutes** following the presentation
+
+- **Content to Include**
+
+  - **Introduction & Overview**
+    - Project title and team members
+    - Brief description of the problem and solution
+
+  - **System Architecture**
+    - Network diagrams (logical & physical)
+    - Services and technologies used
+
+  - **Configuration Plans**
+    - AD/LDAP, DNS, DHCP, GPOs, firewall rules, etc.
+
+  - **Implementation Strategy**
+    - Timeline, milestones, and assigned responsibilities
+
+  - **Testing & Validation**
+    - Planned test methods and success criteria
+
+  - **Risks & Mitigation**
+    - Potential challenges and how they will be addressed
+
+  - **Expected Outcomes**
+    - Deliverables and final system goals
+
+- **Professionalism & Delivery**
+  - Clear, structured slides with visuals (diagrams, screenshots, charts)
+  - Not all team members must participate in presenting
 
 
+## Step 6: Documentation & Validation Checklist
 
+Ensure that **all systems, configurations, policies, and network documentation** are complete, validated, and up to standard. This step acts as both a **knowledge base** for future admins and a **final verification process** that everything functions correctly, is secure, and is ready for production use.
+
+## Checklist for Wiki
+
+Below is the **master checklist** that must be completed and signed off before deployment is considered stable.
+Technologies & Software
+
+- Create the page for **Technologies & Software** with (10 Points):
+  - List of all OS/software that will be used documented, including
+    - Router
+    - Firewall
+    - DNS
+    - IDS/IPS/SIEM 
+    - Web Server
+    - VPN
+    - File Server
+    - Database
+    - Backup and Restore Solution
+    - DHCP Server
+
+- Craete the page for **Network Design** with (20 Points):
+  - Logical and physical diagrams
+  - VLAN table completed and accurate
+  - IP addresses, subnets, gateways, and network segments.
+  - Server and workstation placement
+  - Justify design decisions and state any assumptions clearly. 
+    
+- Craete the page for **Disaster Recovery** with (20 Points):
+  - Plan backup strategies (onsite/offsite, VM snapshots, file backups).
+  - Include failover mechanisms for AD, DNS, and core network services.
+  - Test plan.
+
+- Create the page for **Firewall Rules** with (20 Points):
+  - Rules follow  **principle of least privilege**
+  - All rules contain the **Key rule elements** listed above
+
+- Create the page for **Policies** with (10 Points):
+  - Include all identified organizational policies and regulatory frameworks to enforce.
+    - These do not have be completed, include a parapgrah for each, they will be added to later in the semester
+
+- Create the page for **Hosts Inventory** with (10 Points):
+    - Hostnames, IPs, VLANs, roles, statuses documented
+
+- Create the page for **Hardware Planning** with (10 Points):
+  - List all Physical Workstations & Peripherals.
+  - Total RAM, CPU, and storage needed for all VMs.
+  - Switches, routers, access points, and patch cables.
+  - Onsite backup storage capacity and redundancy.
+  - Plan for offsite backup if required for compliance or disaster recovery.
+
+Submit the link to your completed wiki in Learning Suite, along with your presentation file (as a PDF, PowerPoint, or Google Slides export).
