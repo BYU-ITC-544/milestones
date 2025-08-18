@@ -1,14 +1,20 @@
 # Milestone 6: Final Presentation & Documentation — Wiki Project
 
+
 As part of your final milestone, you will update your initial wiki project presentation to reflect all changes, updates, and progress made throughout the semester. This is your opportunity to demonstrate the wiki system you designed and deployed, emphasizing its value and impact in business terms.
+
 
 ## Instructions
 
+
 ### 1. Final Presentation
+
 
 Prepare a **10–12 minute presentation** for the board of directors that highlights the wiki system’s design, key features, and business benefits. The focus should be on how the system addresses the company’s needs, framed in business terms rather than technical details.
 
+
 Focus on:
+
 
 - **Business Value** — how the wiki improves information sharing, documentation processes, and organizational efficiency.
 - **Key Features** — authentication, search, version control, and access management.
@@ -17,12 +23,16 @@ Focus on:
 - **Compliance** – Demonstrates how the system adheres to all relevant regulatory, legal, and industry requirements.
 
 
+
+
 ### 2. Final Documentation Packet
+
 
 Your final documentation will detail the complete wiki infrastructure, configuration, and operational procedures.
 
+
 #### Core Documentation
-- **Introduction** 
+- **Introduction**
 - **Asset Inventory**
 - **Software Inventory**
 - **Network Diagrams**
@@ -33,10 +43,13 @@ Your final documentation will detail the complete wiki infrastructure, configura
 - **Active Directory Integration**
 - **Vulnerability Management**
 - **VPN Access**
-- **Backup & Disaster Recovery Policy** 
+- **Backup & Disaster Recovery Policy**
+
+
 
 
 #### Separate Files to Include:
+
 
 - Switch configuration & VLAN database
 - DNS server configuration
@@ -48,9 +61,15 @@ Your final documentation will detail the complete wiki infrastructure, configura
 - Most recent vulnerability scan reports
 - VPN server configuration
 
+
 ### Grading
 
+
 - **50 Points** — Submit your updated documentation to your Wiki.
-- **50 Points** — Submit your your final presentation to Learning Suire and deliver it to the board.
+- **50 Points** — Submit your final presentation to Learning Suite and deliver it to the board.
+
 
 Make sure all diagrams are **clear and readable**. The documentation should be professional in formatting, with correct spelling, grammar, and punctuation.
+
+
+
