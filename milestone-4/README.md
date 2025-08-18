@@ -188,36 +188,46 @@ The focus is on securing services, ensuring proper access controls, monitoring, 
 
 ## Checklist for Wiki Update
 
-- Create a page for **File Server Configuration** with:
+- Create a page for **File Server Configuration** with (20 Points):
    - Folder structure and mapping to groups
    - Access rights per folder
    - Backup schedules and locations
    - Troubleshooting tips
-- Create a **Vulnerability Scanning** page with:
+- Create a **Vulnerability Scanning** page with (20 Points):
    - Tool setup and configuration
    - Scan results and screenshots
    - Risk assessment updates
    - Mitigation strategies
-- Create a **VPN Server** page with:
+- Create a **VPN Server** page with (20 Points):
    - Installation steps and configuration
    - Authentication methods
    - Connection instructions for remote users
    - Firewall and port forwarding configuration
    - Test results and troubleshooting steps
-- Create a **SIEM & Endpoint Protection** page with:
+- Create a **SIEM & Endpoint Protection** page with (40 Points):
    - Deployment steps for SIEM and endpoint tools
    - Devices monitored and log sources
    - Alert rules and examples
    - Screenshots of SIEM dashboards and alerts
 - **Configuration Files Repository**: Include configuration files for VPN, File Server, SIEM, Endpoint Protection, and Metric Server.
-- **Security Policies**: Update documentation to reflect changes in policies from this milestone:
+- **Security Policies** (Required for any Points): Update documentation to reflect changes in policies from this milestone:
    - Password & access control
    - VPN access restrictions
    - Endpoint protection enforcement
    - File server permissions
-- **Network Diagrams**: Update to show connections to VPN, SIEM, and File Server.
-- **Backup & Recovery Procedures**: Include instructions for restoring file server and metric server configurations.
-- **Change Log**: Track all updates to Group Policies, firewall rules, and system configurations.
+- **Network Diagrams** (Required for any Points): Update to show connections to VPN, SIEM, and File Server.
+- **Change Log** (Required for any Points): Track all updates to Group Policies, firewall rules, and system configurations.
+
+**Important Note on Scoring**
+Points will only be awarded if both the documentation **and** the corresponding system features are fully implemented and operational. This means:
+
+- **Documentation Accuracy** – All pages must provide clear, complete, and up-to-date information reflecting the current configuration and setup.
+- **Functional Verification** – Each documented feature (e.g., VPN server, SIEM alerts, file server permissions) must be installed, configured, and tested to confirm it works as described.
+- **Consistency** – Any changes made to the system during implementation must be reflected in the documentation to avoid mismatches.
+- **Evidence of Operation** – Screenshots, test results, or verification steps must be included in the documentation where applicable to prove that the feature is functioning.
+
+If the documentation is present but the feature is not functional (or vice versa), **no points will be awarded** for that section.
+
 
 ### Extra Credit (50 Points)
 - Create a **Metric Server** page with:
